@@ -1,0 +1,715 @@
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git init
+Reinitialized existing Git repository in D:/CDAC files/GIT bash/.git/
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git add .
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)        
+        new file:   Demo.txt
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git commit -m "DEMO is modified"
+[master (root-commit) 5f94701] DEMO is modified
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Demo.txt
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git log
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7 (HEAD -> master)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+    DEMO is modified
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git log
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7 (HEAD -> master)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+    DEMO is modified
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git add Demo.txt
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git commit -m "Modification done"
+[master 76ec127] Modification done
+ 1 file changed, 1 insertion(+)
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git log
+commit 76ec127c520320fd0aa2ec40d48689818f399b89 (HEAD -> master)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:07:05 2023 +0530
+
+    Modification done
+
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+    DEMO is modified
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (master)
+$ git branch -M main
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin https://github.com/Hrishikesh-Dhormare/git-march_23
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ add push -u origin main
+bash: add: command not found
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/Hrishikesh-Dhormare/git-march_23
+ ! [rejected]        main -> main (fetch first)       
+error: failed to push some refs to 'https://github.com/Hrishikesh-Dhormare/git-march_23'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.    
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin " https://github.com/Hrishikes
+h-Dhormare/git-march_23"
+error: remote origin already exists.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull -u origin main
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting    
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]    
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer 
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use       
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes      
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack        
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap        
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only     
+    -6, --ipv6            use IPv6 addresses only     
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 608 bytes | 152.00 KiB/s, done.
+From https://github.com/Hrishikesh-Dhormare/git-march_23
+ * [new branch]      main       -> origin/main        
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.   
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main 
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git add -u origin
+fatal: pathspec 'origin' did not match any files
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git checkout main
+Already on 'main'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git log
+
+commit 76ec127c520320fd0aa2ec40d48689818f399b89 (HEAD -> main)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:07:05 2023 +0530
+
+
+    Modification done
+
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+    DEMO is modified
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git add Demo1.html
+fatal: pathspec 'Demo1.html' did not match any files  
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git add Demo1.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git commit
+Aborting commit due to empty commit message.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git commit
+[main 39c5dda] echo $ 'Created File'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Demo1.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git log
+commit 39c5dda301af96086c6c18ea3b1e1bdf328ca9dc (HEAD -> main)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 12:07:18 2023 +0530
+
+    echo $ 'Created File'
+
+commit 76ec127c520320fd0aa2ec40d48689818f399b89       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:07:05 2023 +0530
+
+    Modification done
+
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+    DEMO is modified
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git modify
+git: 'modify' is not a git command. See 'git --help'.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin https://github.com/Hrishikesh-Dhormare/git.git
+error: remote origin already exists.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull -u origin
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting    
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]    
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer 
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use       
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes      
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack        
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap        
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only     
+    -6, --ipv6            use IPv6 addresses only     
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin https://github.com/Hrishikesh-Dhormare/git.git
+error: remote origin already exists.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/Hrishikesh-Dhormare/git-march_23/' not found
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull -u origin main
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting    
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]    
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer 
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use       
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes      
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack        
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap        
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only     
+    -6, --ipv6            use IPv6 addresses only     
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull 
+remote: Repository not found.
+fatal: repository 'https://github.com/Hrishikesh-Dhormare/git-march_23/' not found
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull  origin https://github.com/Hrishikesh-Dhormare/git-march_23
+fatal: invalid refspec 'https://github.com/Hrishikesh-Dhormare/git-march_23'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull -u  origin https://github.com/Hrishikesh-Dh
+ormare/git-march_23
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting    
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]    
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer 
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use       
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes      
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack        
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap        
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only     
+    -6, --ipv6            use IPv6 addresses only     
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates
+                          check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git pull  https://github.com/Hrishikesh-Dhormare/git
+-march_23
+remote: Repository not found.
+fatal: repository 'https://github.com/Hrishikesh-Dhormare/git-march_23/' not found
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin https://github.com/Hrishikesh-Dhormare/git.git
+error: remote origin already exists.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git add origin https://github.com/Hrishikesh-Dhormar
+e/git.git
+fatal: pathspec 'origin' did not match any files
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remove origin https://github.com/Hrishikesh-Dhor
+mare/git.git
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote remove  origin https://github.com/Hrishik
+esh-Dhormare/git.git
+usage: git remote remove <name>
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote remove https://github.com/Hrishikesh-Dhor
+mare/git.git
+error: No such remote: 'https://github.com/Hrishikesh-Dhormare/git.git'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote remove  origin 
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git remote add origin https://github.com/Hrishikesh-Dhormare/git.git
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git branch -M main
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 748 bytes | 748.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0  
+To https://github.com/Hrishikesh-Dhormare/git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git commit -m "second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Demo1.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Demo1.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git add Demo1.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)   
+        modified:   Demo1.html
+
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git commit -m "second commit"
+[main 3f5d0d9] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)       
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git log
+commit 3f5d0d97715857c651184f929fbe42f27a99cb91 (HEAD -> main)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 12:20:24 2023 +0530
+
+    second commit
+
+commit 39c5dda301af96086c6c18ea3b1e1bdf328ca9dc (origin/main)
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 12:07:18 2023 +0530
+
+    echo $ 'Created File'
+
+commit 76ec127c520320fd0aa2ec40d48689818f399b89       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:07:05 2023 +0530
+
+    Modification done
+
+commit 5f94701894064e1e67d1d30bc167d29621bba6f7       
+Author: Hrishikesh Dhormare <dhormarehrishi10@gmail.com>
+Date:   Tue May 23 11:05:35 2023 +0530
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git push branch to github
+error: src refspec to does not match any
+error: src refspec github does not match any
+error: failed to push some refs to 'branch'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git branch sec
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git checkout sec
+Switched to branch 'sec'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git add temp.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git brach -v sec
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git branch -v sec
+fatal: a branch named 'sec' already exists
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git branch -v temp
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git branch
+  main
+* sec
+  temp
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git checkout temp
+Switched to branch 'temp'
+A       temp.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (temp)
+$ git add temp.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (temp)
+$ git commit -m "temp.html is crated"
+[temp 6a68bef] temp.html is crated
+ 1 file changed, 1 insertion(+)
+ create mode 100644 temp.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (temp)
+$ git merge sec
+Already up to date.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (temp)
+$ git checkout sec
+Switched to branch 'sec'
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git merge temp
+Updating 3f5d0d9..6a68bef
+Fast-forward
+ temp.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 temp.html
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git status
+On branch sec
+nothing to commit, working tree clean
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (sec)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.    
+  (use "git push" to publish your local commits)      
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git push -u origin temp
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 551 bytes | 551.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0  
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'temp' on GitHub by visiting:
+remote:      https://github.com/Hrishikesh-Dhormare/git/pull/new/temp
+remote:
+To https://github.com/Hrishikesh-Dhormare/git.git     
+ * [new branch]      temp -> temp
+branch 'temp' set up to track 'origin/temp'.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$ git push -u origin sec
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'sec' on GitHub by visiting:
+remote:      https://github.com/Hrishikesh-Dhormare/git/pull/new/sec
+remote:
+To https://github.com/Hrishikesh-Dhormare/git.git     
+ * [new branch]      sec -> sec
+branch 'sec' set up to track 'origin/sec'.
+
+HRISHI@LAPTOP-QMDMI4PI MINGW64 /d/CDAC files/GIT bash (main)
+$
