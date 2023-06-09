@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body style="background: silver">
+    <div class="col-sm-12 col-md-12 justify-content-center">
+      <nav class="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <h1 class="navbar-brand text-warning font-weight-900" href="http://127.0.0.1:5500/Library/index.html">
+            <span style="font-weight:bolder; font-size: larger; "> Library <img src="icon.png" alt=""></span> 
+          </h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning text-light" value="Menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/Library/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/Library/About_us.html"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/Library/signup.html?name=Hrishikesh+Dhormare&id=158794&email=dhormarerushi10%40yahoo.com&password=123456789&confirm-password=123456789"
+                  >Sign-up</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Log-in
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/Library/admin.login.html"
+                      >Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/Library/student.login.html"
+                      >Student</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Action</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 border-warning"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary text-warning border-warning"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/free-vector/old-library-book-composition-with-view-gallery-with-bookcases-vintage-characters-librarian-readers_1284-58651.jpg?w=1060&t=st=1686161562~exp=1686162162~hmac=ecdb1e3bb3be0531babd746649aa3c8dc75be9c728ebe255ee0e48f86bcc70bc"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-light">
+              <h5>CDAC Library</h5>
+              <p>"THINK BEFORE YOU SPEAK. READ BEFORE YOU THINK."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-vector/traditional-style-library-interior-flat-composition-with-customers-reading-books-consulting-librarian-against-bookshelves-illustration_1284-30793.jpg?w=1060&t=st=1686161982~exp=1686162582~hmac=c92f6329fe2f8a1157e25ab7eaf87854be9258e976f625398a62c8fe7e8951b9"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>CITY LIBRARY</h5>
+              <p>"A ROOM WITHOUT BOOKS IS LIKE A BODY WITHOUT A SOUL".</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://as2.ftcdn.net/v2/jpg/02/06/08/15/1000_F_206081561_pS0Ygcpe8C40Wdibkjq6gtr1AdS4Orh4.jpg"
+              height="500"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Sharing Thought</h5>
+              <p>"FICTION REVEALS TRUTHS THAT REALITY OBSCURES".</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <h3 class="ms-3">Recommended Books 📚</h3>
+      <div class="row ms-3">
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/polygonal-annual-report-book-cover-template_1201-1159.jpg?w=740&t=st=1686207970~exp=1686208570~hmac=9807c6249631fdd0773008113b28f557e809b7df846d93caa1b837bd9c4352ad"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/abstract-elegant-winter-book-cover_23-2148798745.jpg?w=740&t=st=1686208086~exp=1686208686~hmac=6270dec8e4879ce76c15efb88eca18f3f107aced9f1136b91f69444c2a2cf49e"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/bike-guy-wattpad-book-cover_23-2149452163.jpg?size=626&ext=jpg&ga=GA1.2.1151610974.1685383650&semt=ais"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?w=740&t=st=1686208169~exp=1686208769~hmac=f6d920db21fc232510d8bf46ccf247066f42136bba402cffceab47f8f3f5fade"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/polygonal-annual-report-book-cover-template_1201-1159.jpg?w=740&t=st=1686207970~exp=1686208570~hmac=9807c6249631fdd0773008113b28f557e809b7df846d93caa1b837bd9c4352ad"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/abstract-elegant-winter-book-cover_23-2148798745.jpg?w=740&t=st=1686208086~exp=1686208686~hmac=6270dec8e4879ce76c15efb88eca18f3f107aced9f1136b91f69444c2a2cf49e"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/bike-guy-wattpad-book-cover_23-2149452163.jpg?size=626&ext=jpg&ga=GA1.2.1151610974.1685383650&semt=ais"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?w=740&t=st=1686208169~exp=1686208769~hmac=f6d920db21fc232510d8bf46ccf247066f42136bba402cffceab47f8f3f5fade"
+              height="200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mt-3 justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-5 ms-3 alert alert-success">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+            assumenda, optio tenetur voluptates temporibus nobis placeat
+            provident repudiandae asperiores rerum delectus laboriosam laborum
+            sunt quidem tempore beatae modi quaerat commodi.
+          </div>
+          <div class="col-sm-12 col-md-5 ms-5 alert alert-success">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+            assumenda, optio tenetur voluptates temporibus nobis placeat
+            provident repudiandae asperiores rerum delectus laboriosam laborum
+            sunt quidem tempore beatae modi quaerat commodi.
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <!-- <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

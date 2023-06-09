@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Sign-up</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:silver;
+      height: 100vh;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:sandybrown;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(249, 44, 44, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="col-sm-12 col-md-12" >
+    <nav class="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <h2 class="navbar-brand text-warning font-weight-900" href="#">
+            Library
+          </h2>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/Library/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="http://127.0.0.1:5500/Library/About_us.html">support</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning"
+                  href="http://127.0.0.1:5500/Library/signup.html?name=Hrishikesh+Dhormare&id=158794&email=dhormarerushi10%40yahoo.com&password=123456789&confirm-password=123456789"
+                  >Sign-up</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-warning"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Log-in
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/Library/admin.login.html"
+                      >Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="http://127.0.0.1:5500/Library/student.login.html"
+                      >Student</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Action</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 border-warning"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary text-warning border-warning"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>  
+  <div class="row justify-content-center align-items-center" style="background-image: url('https://img.freepik.com/free-photo/composition-laptop-compass-engineering_23-2148169502.jpg?w=1060&t=st=1686198907~exp=1686199507~hmac=e9896f4257c04bb531763804d1706d3c200dd618cd5cabb33e509d73f28334b5');" >
+    <div class="col-sm-10 col-md-6 mb-3">
+        <h2 class="text-warning mt-4">Student Sign-up</h2>
+        <div class="row justify-content-center align-items-center">
+      <div class="col-sm-10 col-md-8 mb-3 ">
+        <p for="name" class="text-warning">Name:</p>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="col-sm-10 col-md-8 mb-3">
+        <p for="id" class="text-warning">Student ID:</p>
+        <input type="text" id="id" name="id" class="form-control" required>
+      </div>
+      <div class="col-sm-10 col-md-8 mb-3">
+        <p for="email" class="text-warning">Contact No.:</p>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="col-sm-10 col-md-8 mb-3">
+        <p for="email" class="text-warning">Email:</p>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="col-sm-10 col-md-8 mb-3">
+        <p for="password" class="text-warning">Password:</p>
+        <input type="password" id="password" name="password" class="form-control" required>
+      </div>
+      <div class="col-sm-10 col-md-8 mb-3">
+        <p for="confirm-password" class="text-warning">Confirm Password:</p>
+        <input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
+      </div>
+      
+      <div class="col-sm-10 col-md-8 mb-3">
+        <div class="row justify-content-center justify-items-center">
+            <div class="col-sm-10 col-md-3">
+                <button type="submit" class="btn btn-warning mt-3">Sign Up</button>
+            </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

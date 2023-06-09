@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js1.js"></script>
+  </head>
+  <body>
+    <div
+      id="div1"
+      style="margin: 25px; border-style: solid; border-color: black"
+    >
+      <div style="padding: 25px">
+        <h1 style="text-align: center">Java Script DOM</h1>
+        <hr />
+        <h3>Alert function</h3>
+        <input type="button" value="CLICK" onclick="alert()" />
+        <h3>User defined Function</h3>
+        <input type="button" value="Console log" onclick="fun1()" />
+        <h3>To increase and decrease font size</h3>
+        <p id="pid1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+          tempora neque in magni. Nulla voluptas sunt neque, ratione at labore,
+          ex soluta sit ducimus quasi quos animi mollitia vel itaque!
+        </p>
+        <h3>Font size</h3>
+        <input type="button" value="A+" onclick="font('large')" />
+        <input type="button" value="A" onclick="font('medium')" />
+        <input type="button" value="A-" onclick="font('small')" />
+        <h3>Font Color</h3>
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="background-color: red; border-radius: 20px"
+          onclick="red()"
+        />
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="cursor: pointer; border-radius: 20px; background-color: blue"
+          onclick="blue()"
+        />
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="border-radius: 20px; background-color: green"
+          onclick="green()"
+        />
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="border-radius: 20px; background-color: black;border-color: white;"
+          onclick="black()"
+        />
+        <h3>Page Color</h3>
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="border-radius: 50px; background-color: black; border-color: white;"
+          onclick="pgblack()"
+        />
+        <input
+          type="button"
+          value="&nbsp;&nbsp;"
+          style="border-radius: 50px"
+          onclick="pgwhite()"
+        />
+
+        <!-- <h3>Margin</h3>
+    <input type="button" value="Margin" style="border-radius: 150px; background-color: black;" onclick="like()"> -->
+      </div>
+    </div>
+  </body>
+</html>
